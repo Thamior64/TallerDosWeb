@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Musica.com</title>
+
+    <link rel="stylesheet" href="/estilos/css.css">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/solid.css" integrity="sha384-VxweGom9fDoUf7YfLTHgO0r70LVNHP5+Oi8dcR4hbEjS8UnpRtrwTx7LpHq/MWLI"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/regular.css" integrity="sha384-RGDxJbFQcd3/Rei8rYb+3xO3YREd0abxm8WfLkYj7j4HHo5ZVuNUGVx8H8GbpFTQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/brands.css" integrity="sha384-Pln/erVatVEIIVh7sfyudOXs5oajCSHg7l5e2Me02e3TklmDuKEhQ8resTIwyI+w"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/fontawesome.css" integrity="sha384-rnr8fdrJ6oj4zli02To2U/e6t1qG8dvJ8yNZZPsKHcU7wFK3MGilejY5R/cUc5kf"
+        crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <nav class="flex-esp-bet">
+        <div class="flex-item logo">
+            <a href="/">
+                <img src="/imagenes/logotipo.png">
+            </a>
+        </div>
+
+        <div class="flex-item buscador">
+            <input type="text" placeholder="¿Que estas buscando hoy?">
+        </div>
+
+        <div class="flex-item ingresar">
+            <button>Ingresar</button>
+        </div>
+
+        <div class="flex-item carrito">
+            <button>Carrito
+                <i class="fas fa-shopping-cart"></i>
+            </button>
+        </div>
+    </nav>
+
+
+    <section class="flex-esp-bet contenido">
+        <article class="flex-item publicidad">
+            <div>
+                <p>Adquiere lo último de</p>
+            </div>
+            <div>
+                <img src="/imagenes/logoFoo.png" alt="" srcset="">
+            </div>
+        </article>
+        <article class="flex-item banner">
+            <div class="banner-fondo"></div>
+        </article>
+    </section>
+
+    <section class="menu">
+        <article class="flex-esp-bet">
+            <div class="flex-item">Albumes</div>
+            <div class="flex-item">Nosotros</div>
+            <div class="flex-item">Ayuda</div>
+            <div class="flex-item">Más info</div>
+        </article>
+    </section>
+
+    <section class="prod">
+
+        <section class="flex-item informacion">
+            <article class="datos">
+                <div>
+                    <p>Ingresa tus datos para enterarte de todo</p>
+                </div>
+                <div>
+                    <p>Correo Electronico</p>
+                </div>
+                <div>
+                    <input type="text" placeholder="Ingrese su correo">
+                </div>
+                <div>
+                    <button>Enviar</button>
+                </div>
+            </article>
+        </section>
+
+        <section class="flex-esp-bet canciones">
+            {{#each canciones}}
+            <article class="flex-item canc">
+
+                <div>
+                    <h1>{{album}}</h1>
+                </div>
+                <div>
+                    <h2>{{autor}}</h2>
+                </div>
+                <div>
+                    <img src="{{imagen}}">
+                </div>
+                <div>
+                    <audio src="{{audio}}" controls></audio>
+                </div>
+
+            </article>
+            {{/each}}
+        </section>
+
+    </section>
+</body>
+
+</html>

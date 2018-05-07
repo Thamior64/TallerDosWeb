@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  background: #67809F;
+  padding: 15px 20%;
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+nav .logo {
+  width: 96px;
+  height: 61px;
+}
+
+nav .logo img {
+  width: 100%;
+}
+
+nav .buscador input {
+  border: 0;
+  height: 40px;
+  width: 450px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+nav .buscador input::placeholder {
+  text-align: center;
+  font-size: 15px;
+  opacity: .8;
+  font-weight: 400;
+}
+
+nav .ingresar button {
+  border-radius: 20px;
+  height: 40px;
+  width: 150px;
+  background-color: #67809F;
+  border: solid 3px #FFFFFF;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all .2s;
+}
+
+nav .ingresar button:hover {
+  color: #67809F;
+  background-color: #FFFFFF;
+}
+
+nav .carrito button {
+  border: 0;
+  border-radius: 20px;
+  height: 40px;
+  width: 150px;
+  background-color: #FFFFFF;
+  color: #67809F;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all .2s;
+}
+
+nav .carrito button:hover {
+  color: #FFFFFF;
+  background-color: #67809F;
+  border: solid 3px #FFFFFF;
+}
+
+.contenido {
+  width: 100%;
+  margin: 0 20%;
+}
+
+.contenido .publicidad {
+  background: #67809F;
+  border-radius: 20px;
+  width: 20%;
+  margin-top: 2%;
+  height: 20%;
+}
+
+.contenido .publicidad div {
+  padding: 15px;
+}
+
+.contenido .publicidad div p {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.contenido .publicidad div img {
+  width: 100%;
+}
+
+.contenido .banner {
+  background: turquoise;
+  padding: 50px;
+}
+
+.contenido .banner .banner-fondo {
+  background-image: url("/imagenes/almendra.jpg");
+  background-size: cover;
+  width: 20%;
+  height: 20%;
+}
+
+.menu {
+  background: #B0CBEB;
+  margin: 30px 20%;
+  border-radius: 20px;
+}
+
+.menu article {
+  padding: 20px 30px;
+}
+
+.menu article div {
+  background: #FFFFFF;
+  color: #67809F;
+  text-align: center;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 125px;
+}
+
+.prod {
+  margin: 0 20%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+}
+
+.prod .informacion {
+  width: 30%;
+}
+
+.prod .informacion .datos {
+  background: #67809F;
+  border-radius: 20px;
+  margin-top: 2%;
+  width: 75%;
+}
+
+.prod .informacion .datos div {
+  padding: 15px;
+  text-align: center;
+}
+
+.prod .informacion .datos div p {
+  padding: 0 10px;
+  color: #FFFFFF;
+}
+
+.prod .informacion .datos div:first-child {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.prod .informacion .datos div:nth-child(2) {
+  font-weight: 400;
+  letter-spacing: 1;
+  font-size: 15px;
+  padding: 0;
+}
+
+.prod .informacion .datos div:nth-child(3) input {
+  border: 0;
+  height: 30px;
+  width: 90%;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.prod .informacion .datos div:nth-child(4) {
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+.prod .informacion .datos div:nth-child(4) button {
+  border: 0;
+  border-radius: 20px;
+  height: 30px;
+  width: 100px;
+  background-color: #FFFFFF;
+  color: #67809F;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all .2s;
+}
+
+.prod .informacion .datos div:nth-child(4) button:hover {
+  background: #B0CBEB;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.prod .canciones {
+  width: 70%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.prod .canciones .canc {
+  width: 200px;
+  margin: 0 20px;
+}
+
+.prod .canciones .canc h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #67809F;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.prod .canciones .canc h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #67809F;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.prod .canciones .canc div:first-child {
+  border-bottom: solid 1px #67809F;
+}
+
+.prod .canciones .canc div:nth-child(3) {
+  border-radius: 20px;
+  width: 200px;
+}
+
+.prod .canciones .canc div:nth-child(3) img {
+  text-align: center;
+  width: 100%;
+}
+
+.prod .canciones .canc div:nth-child(4) audio {
+  width: 200px;
+}
+
+.flex-esp-bet {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+}
+
+.flex-item {
+  order: 0;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+/*# sourceMappingURL=css.css.map */

@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+$colorUno: #F7F7F7;
+$colorDos: #67809F;
+$ColorFuente: #FFFFFF;
+$colorTres: #B0CBEB;
+$roboto: 'Roboto',
+sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $roboto;
+}
+
+nav {
+    background: $colorDos;
+    padding: 15px 20%;
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.3);
+    .logo {
+        width: 96px;
+        height: 61px;
+        img {
+            width: 100%;
+        }
+    }
+    .buscador {
+        input {
+            border: 0;
+            height: 40px;
+            width: 450px;
+            border-radius: 20px;
+            letter-spacing: 1px;
+            text-align: center;
+            font-family: $roboto;
+            font-weight: 600;
+        }
+        input::placeholder {
+            text-align: center;
+            font-size: 15px;
+            opacity: .8;
+            font-weight: 400;
+        }
+    }
+    .ingresar {
+        button {
+            border-radius: 20px;
+            height: 40px;
+            width: 150px;
+            background-color: $colorDos;
+            border: solid 3px $ColorFuente;
+            color: $ColorFuente;
+            font-weight: 500;
+            font-size: 15px;
+            transition: all .2s;
+        }
+        button:hover {
+            color: $colorDos;
+            background-color: $ColorFuente;
+        }
+    }
+    .carrito {
+        button {
+            border: 0;
+            border-radius: 20px;
+            height: 40px;
+            width: 150px;
+            background-color: $ColorFuente;
+            color: $colorDos;
+            font-weight: 500;
+            font-size: 15px;
+            transition: all .2s;
+        }
+        button:hover {
+            color: $ColorFuente;
+            background-color: $colorDos;
+            border: solid 3px $ColorFuente;
+        }
+    }
+}
+
+.contenido {
+    width: 100%;
+    margin: 0 20%;
+    .publicidad {
+        background: $colorDos;
+        border-radius: 20px;
+        width: 20%;
+        margin-top: 2%;
+        height: 20%;
+        div {
+            padding: 15px;
+            p {
+                font-size: 20px;
+                font-weight: 600;
+                text-align: center;
+                color: $ColorFuente;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .banner {
+        background: turquoise;
+        padding: 50px;
+        .banner-fondo {
+            background-image: url("/imagenes/almendra.jpg");
+            background-size: cover;
+            width: 20%;
+            height: 20%;
+        }
+    }
+}
+
+.menu {
+    background: $colorTres;
+    margin: 30px 20%;
+    border-radius: 20px;
+    article {
+        padding: 20px 30px;
+        div {
+            background: $ColorFuente;
+            color: $colorDos;
+            text-align: center;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 20px;
+            width: 125px;
+        }
+    }
+}
+
+.prod {
+    margin: 0 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    .informacion {
+        width: 30%;
+        .datos {
+            background: $colorDos;
+            border-radius: 20px;
+            margin-top: 2%;
+            width: 75%;
+            div {
+                padding: 15px;
+                text-align: center;
+                p {
+                    padding: 0 10px;
+                    color: $ColorFuente;
+                }
+            }
+            div:first-child {
+                font-weight: 600;
+                font-size: 20px;
+            }
+            div:nth-child(2) {
+                font-weight: 400;
+                letter-spacing: 1;
+                font-size: 15px;
+                padding: 0;
+            }
+            div:nth-child(3) {
+                input {
+                    border: 0;
+                    height: 30px;
+                    width: 90%;
+                    border-radius: 20px;
+                    text-align: center;
+                }
+            }
+            div:nth-child(4) {
+                padding: 0;
+                padding-bottom: 20px;
+                button {
+                    border: 0;
+                    border-radius: 20px;
+                    height: 30px;
+                    width: 100px;
+                    background-color: $ColorFuente;
+                    color: $colorDos;
+                    font-weight: 500;
+                    font-size: 15px;
+                    transition: all .2s;
+                }
+                button:hover {
+                    background: $colorTres;
+                    color: $ColorFuente;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .canciones {
+        width: 70%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0;
+        padding: 0;
+        .canc {
+            width: 200px;
+            margin: 0 20px;
+            h1 {
+                font-size: 20px;
+                font-weight: 600;
+                color: $colorDos;
+                text-align: center;
+                padding-bottom: 5px;
+            }
+            h2 {
+                font-size: 18px;
+                font-weight: 400;
+                color: $colorDos;
+                text-align: center;
+                padding-top: 5px;
+            }
+            div:first-child {
+                border-bottom: solid 1px $colorDos;
+            }
+            div:nth-child(3) {
+                border-radius: 20px;
+                width: 200px;
+                img {
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+            div:nth-child(4) {
+                audio {
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
+
+.flex-esp-bet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;
+}
+
+.flex-item {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
