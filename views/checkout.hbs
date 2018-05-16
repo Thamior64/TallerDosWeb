@@ -39,105 +39,42 @@
         </div>
 
         <div class="carro">
-            <a href="/check">Carrito
+            <a href="/check">Carrito</a>
             <span class="carrito">0</span>
-</a>
+
         </div>
     </nav>
 
-    <section class="contenido-index">
-
-        <section class="contenido">
-            <article class="publicidad">
-                <h2>Adquiere lo último de</h2>
-                <img src="/imagenes/logoFoo.png" alt="" srcset="">
-            </article>
-            <article class="banner">
-            </article>
-        </section>
-
-        <section class="menu">
-            <article>
-                <div>
-                    <a href="">Albumes</a>
-                </div>
-                <div>
-                    <a href="">Nosotros</a>
-                </div>
-                <div>
-                    <a href="">Ayuda</a>
-                </div>
-                <div>
-                    <a href="">Más info</a>
-                </div>
-            </article>
-        </section>
-
-        <section class="productos">
-
-            <section class="filtros">
-                <article class="datos">
+    <section class="checkout">
+        <section class="lista">
+            <article class="articuloLista">
+                <article class="imagenCheck">
                     <div>
-                        <h3>Ingresa tus datos para enterarte de todo</h3>
-                    </div>
-
-                    <div>
-                        <input type="text" placeholder="Ingrese su correo">
-                    </div>
-                    <div>
-                        <button>Enviar</button>
+                        <img src="" alt="">
                     </div>
                 </article>
-
-                <article class="filtroPrecio">
-                    <div>
-                        <h3>Precio</h3>
+                <article class="infoCheck">
+                    <div class="botoon">
+                        <div><h1>album</h1></div>
+                        <div class="salir">
+                            <i class="fas fa-times-circle"></i>
+                        </div>
                     </div>
-                    <input type="range" min="0" max="50000" value="0" class="slider" id="desde">
-                    <input type="range" min="50000" max="100000" value="100000" class="slider" id="hasta">
-
-                    <div class="precios">
-                        <p>Desde:
-                            <br/>
-                            <span id="desdeValor"></span>
-                        </p>
-                        <p>Hasta:
-                            <br/>
-                            <span id="hastaValor"></span>
-                        </p>
-                    </div>
-                    <button class="buscar">Buscar</button>
-                    <button class="borrar"> Borrar</button>
-
-                </article>
-            </section>
-
-            <section class="canciones">
-                {{#each canciones}}
-                <article class="canc" data-id="{{this._id}}">
-                    <a href="/productos/{{_id}}">
-                        <div>
-                            <h1>{{album}}</h1>
-                        </div>
-                        <div>
-                            <h2>{{autor}}</h2>
-                        </div>
-                        <div>
-                            <img src="{{imagen}}">
-                        </div>
-                        <div>
-                            <audio src="{{audio}}" controls></audio>
-                        </div>
-                    </a>
                     <div>
-                        <button class="agregar"> Agregar a la lista de Compras</button>
+                        <h2>autor</h2>
+                    </div>
+                    <div>
+                        <p>desripcion</p>
+                    </div>
+                    <div class="preecio">
+                        <p>precio</p>
                     </div>
                 </article>
-                {{/each}}
-            </section>
-
+            </article>
         </section>
+        <section class="pagar"></section>
     </section>
+
     <footer>
         <section>
 
@@ -198,11 +135,9 @@
 
     </footer>
 
-
-    <script src="/js/banner.js"></script>
-    <script src="/js/filtros.js"></script>
     <script src="/js/cliente.js"></script>
-    <script src="/js/productos.js"></script>
+    <script src="/js/check.js"></script>
+
 </body>
 
 </html>

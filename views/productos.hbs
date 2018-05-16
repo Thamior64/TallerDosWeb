@@ -23,7 +23,7 @@
 </head>
 
 <body>
-   <nav>
+    <nav>
         <div class="logo">
             <a href="/">
                 <img src="/imagenes/logotipo.png">
@@ -38,20 +38,22 @@
             <a href="">Ingresar</a>
         </div>
 
-        <div class="carrito">
-            <a href="">Carrito</a>
+        <div class="carro">
+            <a href="/check">Carrito</a>
+            <span class="carrito">0</span>
+
         </div>
     </nav>
 
 
-    <sectio class="flex-esp-bet prod">
+    <section class="productoDetallado">
         <article class="imagenDescr">
             <div>
                 <img src="{{cancion.imagen}}">
             </div>
         </article>
 
-        <article>
+        <article class="textDescr">
             <div>
                 <h1>{{cancion.album}}</h1>
             </div>
@@ -59,18 +61,21 @@
                 <h2>{{cancion.autor}}</h2>
             </div>
             <div>
-                <p>Descripción</p>
+                <p><strong>Descripción</strong></p>
             </div>
             <div>{{cancion.descripcion}}</div>
 
-            <article class="flex-esp-bet">
+            <article class="preciomasagregar">
                 <div>$ {{cancion.precio}} COP</div>
                 <div>
                     <button>Agregar al carrito</button>
                 </div>
             </article>
         </article>
-    </sectio>
+    </section>
+   
+
+
     <footer>
         <section>
 

@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+$colorUno: #F7F7F7;
+$colorDos: #67809F;
+$ColorFuente: #FFFFFF;
+$colorTres: #B0CBEB;
+$roboto: 'Roboto',
+sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $roboto;
+    transition: all .2s;
+}
+
+nav {
+    background: $colorDos;
+    padding: 15px 15%;
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;
+    .logo {
+        width: 96px;
+        height: 61px;
+        img {
+            width: 100%;
+        }
+    }
+    .buscador {
+        width: 80%;
+        text-align: center;
+        input {
+            width: 50%;
+            padding: 15px 0;
+            border-radius: 20px;
+            border: none;
+            text-align: center;
+        }
+        input::placeholder {
+            text-align: center;
+        }
+    }
+    .ingresar {
+        a {
+            color: #fff;
+            margin: 0 15px;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 20px;
+            border: solid 2px #fff;
+        }
+    }
+    .carro {
+        a {
+            text-decoration: none;
+            color: $colorDos;
+            border-radius: 25px; //border: solid 2px $colorDos;
+            background: #fff;
+            padding: 15px 25px;
+            ;
+        }
+    }
+}
+
+.contenido-index {
+    margin: 0 15%;
+    .contenido {
+        margin: 3% 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: flex-start;
+        .publicidad {
+            background: $colorDos;
+            width: 30vh;
+            height: 20vh;
+            text-align: center;
+            padding-top: 50px;
+            border-radius: 20px;
+            h2 {
+                color: #fff;
+                font-weight: bold;
+            }
+        }
+        .banner {
+            height: 30vh;
+            width: 25%; //Imagen de fondo
+            background-image: url("/imagenes/sabina.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-left: 40px;
+            border-radius: 20px;
+            transition: all .4s;
+        }
+    }
+    .menu {
+        article {
+            background: $colorDos;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-content: stretch;
+            align-items: flex-start;
+            div {
+                a {
+                    background: #fff;
+                    text-decoration: none;
+                    border-radius: 20px;
+                    padding: 15px 30px;
+                    color: $colorDos;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .productos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: flex-start;
+        .filtros {
+            width: 20%;
+            .datos {
+                background: $colorDos;
+                margin-top: 30px;
+                border-radius: 20px;
+                text-align: center;
+                color: #fff;
+                h3 {
+                    padding: 10px 0;
+                }
+                input {
+                    width: 80%;
+                    border: none;
+                    border-radius: 20px;
+                    padding: 10px 0;
+                    text-align: center;
+                }
+                button {
+                    opacity: .4;
+                    border: none;
+                    border-radius: 15px;
+                    width: 50%;
+                    padding: 10px 0;
+                    font-size: 15px;
+                    font-weight: bold;
+                    margin: 15px 0;
+                    color: $colorDos
+                }
+                button:hover {
+                    opacity: 1;
+                }
+            }
+            .filtroPrecio {
+                background: $colorDos;
+                border-radius: 20px;
+                text-align: center;
+                margin-top: 40px;
+                div {
+                    h3 {
+                        padding: 10px 0;
+                        color: #fff;
+                    }
+                }
+                input {
+                    width: 40%;
+                    background: #fff;
+                }
+                .slidecontainer {
+                    width: 100%;
+                }
+                .slider {
+                    -webkit-appearance: none;
+                    height: 10px;
+                    border-radius: 5px;
+                    opacity: 0.7;
+                    transition: .2s;
+                    transition: opacity .2s;
+                }
+                .slider:hover {
+                    opacity: 1;
+                }
+                .slider::-webkit-slider-thumb {
+                    -webkit-appearance: none;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background: $colorDos;
+                    border: solid 2px #fff;
+                    cursor: pointer;
+                }
+                .precios {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+                    align-content: stretch;
+                    align-items: flex-start;
+                    margin: 0 60px;
+                    color: #fff;
+                    font-weight: bold;
+                    text-align: center;
+                    span {
+                        font-weight: 400;
+                    }
+                }
+                button {
+                    background: #fff;
+                    font-weight: bold;
+                    font-size: 15px;
+                    color: $colorDos;
+                    border-radius: 20px;
+                    border: none;
+                    height: 30px;
+                    width: 140px;
+                    margin: 15px 0;
+                }
+            }
+        }
+        .canciones {
+            width: 80%;
+            margin-bottom: 30px;
+            .canc {
+                box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.3);
+                width: 30%;
+                border-radius: 20px;
+                border: solid 2px transparent;
+                margin: 1.1%;
+                float: left;
+                a {
+                    text-decoration: none;
+                    text-align: center;
+                    div {
+                        margin: 10px 10px;
+                        h1 {
+                            font-weight: bold;
+                            font-size: 25px;
+                            text-transform: uppercase;
+                            color: $colorDos;
+                            border-bottom: solid 2px $colorDos;
+                        }
+                        h2 {
+                            font-weight: 600;
+                            font-size: 18px;
+                            color: $colorDos;
+                        }
+                        img {
+                            width: 100%;
+                        }
+                        audio {
+                            background: #fff;
+                        }
+                    }
+                }
+                button {
+                    background: $colorDos;
+                    border-radius: 20px;
+                    text-align: center;
+                    border: solid 2px $colorDos;
+                    height: 25px;
+                    color: #fff;
+                    padding: 0 10px;
+                    font-size: 15px;
+                    margin: 15px 15%;
+                }
+            }
+            .canc:hover {
+                border: solid 2px $colorDos;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $colorDos;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: flex-start;
+    .logoFooter {
+        text-align: center;
+        margin: 15px 0;
+    }
+    .informacion {
+        color: #fff;
+        article {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: stretch;
+            align-items: flex-start;
+            div {
+                margin: 0 20px;
+            }
+        }
+    }
+    .informacionGeneral {
+        color: #fff;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: flex-start;
+        section {
+            margin: 20px;
+            p {
+                text-align: center;
+            }
+            .formasDePago {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-content: stretch;
+                align-items: flex-start;
+                div {
+                    margin: 0 10px;
+                    .fab {
+                        font-size: 30px;
+                        font-weight: 400;
+                        opacity: .5;
+                        transition: all .2s;
+                        margin-top: 10px;
+                    }
+                    .fab:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+            .redesSociales {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-content: stretch;
+                align-items: flex-start;
+                div {
+                    margin: 0 10px;
+                    .fab {
+                        font-size: 30px;
+                        font-weight: 400;
+                        opacity: .5;
+                        transition: all .2s;
+                        margin-top: 10px;
+                    }
+                    .fab:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Visualizacion de productos individual */
+
+.productoDetallado {
+    width: 80%;
+    margin: 0 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    padding: 7% 0;
+    .imagenDescr {
+        div {
+            width: 30vw;
+            img {
+                width: 100%;
+                box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.3);
+                border-radius: 20px;
+            }
+        }
+    }
+    .textDescr {
+        margin-left: 5%;
+        width: 40%;
+        h1 {
+            font-weight: bold;
+            font-size: 25px;
+            text-transform: uppercase;
+            color: $colorDos;
+            border-bottom: solid 2px $colorDos;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        h2 {
+            font-weight: 600;
+            font-size: 18px;
+            color: $colorDos;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .preciomasagregar {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-content: stretch;
+            align-items: flex-start;
+            div {
+                margin: 10px;
+                button {
+                    border: solid 2px $colorDos;
+                    border-radius: 20px;
+                    background: #fff;
+                    font-family: $roboto;
+                    color: $colorDos;
+                    font-weight: bold;
+                    font-size: 20px;
+                    width: 200px;
+                    height: 40px;
+                }
+                button:hover {
+                    background: $colorDos;
+                    color: #fff;
+                }
+            }
+            div:first-child {
+                font-weight: bold;
+                font-size: 30px;
+                color: $colorDos
+            }
+        }
+    }
+}
+
+/* Check Out*/
+
+.chechkout {
+    width: 100%;
+    margin: 0 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+    .lista {
+        width: 80%;
+        .articuloLista {
+            width: 100%;
+            background: #fff;
+            box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            border: solid 2px $colorDos;
+            .infoCheck {
+                div {
+                    h1 {
+                        font-weight: bold;
+                        font-size: 25px;
+                        text-transform: uppercase;
+                        color: $colorDos;
+                        border-bottom: solid 2px $colorDos;
+                        margin-bottom: 10px;
+                        text-align: center;
+                    }
+                    h2 {
+                        font-weight: 600;
+                        font-size: 18px;
+                        color: $colorDos;
+                        margin-bottom: 10px;
+                        text-align: center;
+                    }
+                    .botoon {
+                       
+                        .salir {
+                            float:left;
+                            .fas {
+                                color: $colorDos;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .pagar {
+        width: 20%;
+    }
+}

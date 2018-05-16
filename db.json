@@ -3,42 +3,42 @@
         "autor": "Jorge Drexler",
         "album": "Salvavidas de hielo",
         "descripcion": "El nuevo álbum de Jorge Drexler, 'Salvavidas de hielo', es resultado de una búsqueda por reinventar su música, la trova.",
-        "precio": "32.800",
+        "precio": 32800,
         "imagen": "/imagenes/drexler.jpg",
         "audio": "/audios/drexlerP.ogg"
     }, {
         "autor": "Almendra",
         "album": "Almendra I",
         "descripcion": "Primer álbum de estudio de la banda argentina de rock Almendra, lanzado en 1969 por RCA Vik.",
-        "precio": "24.900",
+        "precio": 24900,
         "imagen": "/imagenes/almendra.jpg",
         "audio": "/audios/almendraP.ogg"
     }, {
         "autor": "Kevin Johansen",
         "album": "Bi)vo en Mexico +DVD",
         "descripcion": "Álbum grabado en vivo en el Distrito Federal que confirma su inagotable creatividad musical.",
-        "precio": "41.900",
+        "precio": 41900,
         "imagen": "/imagenes/kevin.jpg",
         "audio": "/audios/kevinP.ogg"
     }, {
         "autor": "Piero",
         "album": "America",
         "descripcion": "En este álbum, Piero ha decidido presentar a sus seguidores la realidad que viveAmérica por medio de la música.",
-        "precio": "24.900",
+        "precio": 24900,
         "imagen": "/imagenes/piero.jpg",
         "audio": "/audios/pieroP.ogg"
     }, {
         "autor": "El Kanka",
         "album": "El día de la suerte",
         "descripcion": "Segundo trabajo de estudio para el que conto con la colaboración de cientos de fieles mecenas a través de la plataforma My Major Company.",
-        "precio": "32.800",
+        "precio": 32800,
         "imagen": "/imagenes/kanka.jpg",
         "audio": "/audios/kankaP.ogg"
     }, {
         "autor": "Spinetta",
         "album": "Artaud",
         "descripcion": "tercer álbum de estudio de Pescado Rabioso y el segundo como solista del músico de rock argentino Luis Alberto Spinetta, lanzado en 1973.",
-        "precio": "24.900",
+        "precio": 24900,
         "imagen": "/imagenes/spinetta.jpg",
         "audio": "/audios/spinettaP.ogg"
 
@@ -46,14 +46,14 @@
         "autor": "Silvina Moreno",
         "album": "Sofá",
         "descripcion": "Sofá es el tercer álbum de estudio de Silvina Moreno.",
-        "precio": "32.800",
+        "precio": 32800,
         "imagen": "/imagenes/silvina.jpg",
         "audio": "/audios/silvinaP.ogg"
     }, {
         "autor": "Joaquín Sabina",
         "album": "Lo niego todo",
         "descripcion": "Lo niego todo es el decimoséptimo álbum de estudio de Joaquín Sabina.El álbum nació de la colaboración entre Sabina, Leiva(productor del álbum) y Benjamín Prado.",
-        "precio": "32.800",
+        "precio": 32800,
         "imagen": "/imagenes/sabina.jpg",
         "audio": "/audios/sabinaP.ogg"
 
