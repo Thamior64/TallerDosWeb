@@ -53,7 +53,7 @@ nav .ingresar a {
   border: solid 2px #fff;
 }
 
-nav .carrito a {
+nav .carro a {
   text-decoration: none;
   color: #67809F;
   border-radius: 25px;
@@ -244,6 +244,7 @@ nav .carrito a {
 
 .contenido-index .productos .canciones {
   width: 80%;
+  margin-bottom: 30px;
 }
 
 .contenido-index .productos .canciones .canc {
@@ -405,4 +406,138 @@ footer .informacionGeneral section .redesSociales div .fab:hover {
 }
 
 /* Visualizacion de productos individual */
+.productoDetallado {
+  width: 80%;
+  margin: 0 15%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+  padding: 7% 0;
+}
+
+.productoDetallado .imagenDescr div {
+  width: 30vw;
+}
+
+.productoDetallado .imagenDescr div img {
+  width: 100%;
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.productoDetallado .textDescr {
+  margin-left: 5%;
+  width: 40%;
+}
+
+.productoDetallado .textDescr h1 {
+  font-weight: bold;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #67809F;
+  border-bottom: solid 2px #67809F;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.productoDetallado .textDescr h2 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #67809F;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.productoDetallado .textDescr .preciomasagregar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: flex-start;
+}
+
+.productoDetallado .textDescr .preciomasagregar div {
+  margin: 10px;
+}
+
+.productoDetallado .textDescr .preciomasagregar div button {
+  border: solid 2px #67809F;
+  border-radius: 20px;
+  background: #fff;
+  font-family: "Roboto", sans-serif;
+  color: #67809F;
+  font-weight: bold;
+  font-size: 20px;
+  width: 200px;
+  height: 40px;
+}
+
+.productoDetallado .textDescr .preciomasagregar div button:hover {
+  background: #67809F;
+  color: #fff;
+}
+
+.productoDetallado .textDescr .preciomasagregar div:first-child {
+  font-weight: bold;
+  font-size: 30px;
+  color: #67809F;
+}
+
+/* Check Out*/
+.chechkout {
+  width: 100%;
+  margin: 0 20%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: flex-start;
+}
+
+.chechkout .lista {
+  width: 80%;
+}
+
+.chechkout .lista .articuloLista {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  border: solid 2px #67809F;
+}
+
+.chechkout .lista .articuloLista .infoCheck div h1 {
+  font-weight: bold;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #67809F;
+  border-bottom: solid 2px #67809F;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.chechkout .lista .articuloLista .infoCheck div h2 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #67809F;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.chechkout .lista .articuloLista .infoCheck div .botoon .salir {
+  float: left;
+}
+
+.chechkout .lista .articuloLista .infoCheck div .botoon .salir .fas {
+  color: #67809F;
+}
+
+.chechkout .pagar {
+  width: 20%;
+}
 /*# sourceMappingURL=css.css.map */
