@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Musica.com</title>
+
+    <link rel="stylesheet" href="/estilos/css.css">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/solid.css" integrity="sha384-VxweGom9fDoUf7YfLTHgO0r70LVNHP5+Oi8dcR4hbEjS8UnpRtrwTx7LpHq/MWLI"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/regular.css" integrity="sha384-RGDxJbFQcd3/Rei8rYb+3xO3YREd0abxm8WfLkYj7j4HHo5ZVuNUGVx8H8GbpFTQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/brands.css" integrity="sha384-Pln/erVatVEIIVh7sfyudOXs5oajCSHg7l5e2Me02e3TklmDuKEhQ8resTIwyI+w"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/fontawesome.css" integrity="sha384-rnr8fdrJ6oj4zli02To2U/e6t1qG8dvJ8yNZZPsKHcU7wFK3MGilejY5R/cUc5kf"
+        crossorigin="anonymous">
+
+
+</head>
+
+<body>
+   <nav>
+        <div class="logo">
+            <a href="/">
+                <img src="/imagenes/logotipo.png">
+            </a>
+        </div>
+
+        <div class="buscador">
+            <input type="text" placeholder="¿Que estas buscando hoy?">
+        </div>
+
+        <div class="ingresar">
+            <a href="">Ingresar</a>
+        </div>
+
+        <div class="carrito">
+            <a href="">Carrito</a>
+        </div>
+    </nav>
+
+
+    <sectio class="flex-esp-bet prod">
+        <article class="imagenDescr">
+            <div>
+                <img src="{{cancion.imagen}}">
+            </div>
+        </article>
+
+        <article>
+            <div>
+                <h1>{{cancion.album}}</h1>
+            </div>
+            <div>
+                <h2>{{cancion.autor}}</h2>
+            </div>
+            <div>
+                <p>Descripción</p>
+            </div>
+            <div>{{cancion.descripcion}}</div>
+
+            <article class="flex-esp-bet">
+                <div>$ {{cancion.precio}} COP</div>
+                <div>
+                    <button>Agregar al carrito</button>
+                </div>
+            </article>
+        </article>
+    </sectio>
+    <footer>
+        <section>
+
+            <section>
+                <article class="logoFooter">
+                    <div>
+                        <img src="/imagenes/logoFoo.png">
+                    </div>
+                </article>
+            </section>
+            <section class="informacion">
+                <article>
+                    <div>Políticas de privacidad</div>
+                    <div>Distribuidores</div>
+                    <div>Copyright</div>
+                </article>
+            </section>
+
+            <section class="informacionGeneral">
+                <section>
+                    <article>
+                        <p>Formas de pago</p>
+                    </article>
+                    <article class="formasDePago">
+                        <div>
+                            <i class="fab fa-cc-mastercard"></i>
+                        </div>
+                        <div>
+                            <i class="fab fa-cc-visa"></i>
+                        </div>
+                        <div>
+                            <i class="fab fa-paypal"></i>
+                        </div>
+                    </article>
+                </section>
+
+                <section>
+                    <article>
+                        <p>Redes Sociales</p>
+                    </article>
+                    <article class="redesSociales">
+                        <div>
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div>
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div>
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div>
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </article>
+                </section>
+            </section>
+        </section>
+
+    </footer>
+</body>
+
+</html>

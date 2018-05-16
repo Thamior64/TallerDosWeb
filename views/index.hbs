@@ -23,93 +23,281 @@
 </head>
 
 <body>
-    <nav class="flex-esp-bet">
-        <div class="flex-item logo">
+    <nav>
+        <div class="logo">
             <a href="/">
                 <img src="/imagenes/logotipo.png">
             </a>
         </div>
 
-        <div class="flex-item buscador">
+        <div class="buscador">
             <input type="text" placeholder="¿Que estas buscando hoy?">
         </div>
 
-        <div class="flex-item ingresar">
-            <button>Ingresar</button>
+        <div class="ingresar">
+            <a href="">Ingresar</a>
         </div>
 
-        <div class="flex-item carrito">
-            <button>Carrito
-                <i class="fas fa-shopping-cart"></i>
-            </button>
+        <div class="carrito">
+            <a href="">Carrito</a>
         </div>
     </nav>
 
+    <section class="contenido-index">
 
-    <section class="flex-esp-bet contenido">
-        <article class="flex-item publicidad">
-            <div>
-                <p>Adquiere lo último de</p>
-            </div>
-            <div>
+        <section class="contenido">
+            <article class="publicidad">
+                <h2>Adquiere lo último de</h2>
                 <img src="/imagenes/logoFoo.png" alt="" srcset="">
-            </div>
-        </article>
-        <article class="flex-item banner">
-            <div class="banner-fondo"></div>
-        </article>
-    </section>
+            </article>
+            <article class="banner">
+            </article>
+        </section>
 
-    <section class="menu">
-        <article class="flex-esp-bet">
-            <div class="flex-item">Albumes</div>
-            <div class="flex-item">Nosotros</div>
-            <div class="flex-item">Ayuda</div>
-            <div class="flex-item">Más info</div>
-        </article>
-    </section>
-
-    <section class="prod">
-
-        <section class="flex-item informacion">
-            <article class="datos">
+        <section class="menu">
+            <article>
                 <div>
-                    <p>Ingresa tus datos para enterarte de todo</p>
+                    <a href="">Albumes</a>
                 </div>
                 <div>
-                    <p>Correo Electronico</p>
+                    <a href="">Nosotros</a>
                 </div>
                 <div>
-                    <input type="text" placeholder="Ingrese su correo">
+                    <a href="">Ayuda</a>
                 </div>
                 <div>
-                    <button>Enviar</button>
+                    <a href="">Más info</a>
                 </div>
             </article>
         </section>
 
-        <section class="flex-esp-bet canciones">
-            {{#each canciones}}
-            <article class="flex-item canc">
+        <section class="productos">
 
-                <div>
-                    <h1>{{album}}</h1>
-                </div>
-                <div>
-                    <h2>{{autor}}</h2>
-                </div>
-                <div>
-                    <img src="{{imagen}}">
-                </div>
-                <div>
-                    <audio src="{{audio}}" controls></audio>
-                </div>
+            <section class="filtros">
+                <article class="datos">
+                    <div>
+                        <h3>Ingresa tus datos para enterarte de todo</h3>
+                    </div>
 
-            </article>
-            {{/each}}
+                    <div>
+                        <input type="text" placeholder="Ingrese su correo">
+                    </div>
+                    <div>
+                        <button>Enviar</button>
+                    </div>
+                </article>
+
+                <article class="filtroPrecio">
+                    <div>
+                        <h3>Precio</h3>
+                    </div>
+                    <input type="range" min="0" max="50000" value="0" class="slider" id="desde">
+                    <input type="range" min="50000" max="100000" value="100000" class="slider" id="hasta">
+
+                    <div class="precios">
+                        <p>Desde:
+                            <br/>
+                            <span id="desdeValor"></span>
+                        </p>
+                        <p>Hasta:
+                            <br/>
+                            <span id="hastaValor"></span>
+                        </p>
+                    </div>
+                    <button class="buscar">Buscar</button>
+                    <button class="borrar"> Borrar</button>
+
+                </article>
+            </section>
+
+            <section class="canciones">
+                {{#each canciones}}
+                <article class="canc">
+                    <a href="/productos/{{_id}}">
+                        <div>
+                            <h1>{{album}}</h1>
+                        </div>
+                        <div>
+                            <h2>{{autor}}</h2>
+                        </div>
+                        <div>
+                            <img src="{{imagen}}">
+                        </div>
+                        <div>
+                            <audio src="{{audio}}" controls></audio>
+                        </div>
+                    </a>
+                    <div>
+                        <button class="agregar"> Agregar a la lista de Compras</button>
+                    </div>
+                </article>
+                {{/each}}
+            </section>
+
+        </section>
+    </section>
+    <footer>
+        <section>
+
+            <section>
+                <article class="logoFooter">
+                    <div>
+                        <img src="/imagenes/logoFoo.png">
+                    </div>
+                </article>
+            </section>
+            <section class="informacion">
+                <article>
+                    <div>Políticas de privacidad</div>
+                    <div>Distribuidores</div>
+                    <div>Copyright</div>
+                </article>
+            </section>
+
+            <section class="informacionGeneral">
+                <section>
+                    <article>
+                        <p>Formas de pago</p>
+                    </article>
+                    <article class="formasDePago">
+                        <div>
+                            <i class="fab fa-cc-mastercard"></i>
+                        </div>
+                        <div>
+                            <i class="fab fa-cc-visa"></i>
+                        </div>
+                        <div>
+                            <i class="fab fa-paypal"></i>
+                        </div>
+                    </article>
+                </section>
+
+                <section>
+                    <article>
+                        <p>Redes Sociales</p>
+                    </article>
+                    <article class="redesSociales">
+                        <div>
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div>
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div>
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div>
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </article>
+                </section>
+            </section>
         </section>
 
-    </section>
+    </footer>
+
+    <script>
+        var movimientoBanner = setInterval(cambiarBanner, 3000);
+        var banner = ["/imagenes/almendra.jpg", "/imagenes/cds.jpg", "/imagenes/drexler.jpg",
+                "/imagenes/drexlerf.jpg", "/imagenes/kanka.jpg", "/imagenes/kevin.jpg", "/imagenes/piero.jpg",
+                "/imagenes/sabina.jpg", "/imagenes/silvina.jpg", "/imagenes/spinetta.jpg"];
+                banner.iterador = 1;
+
+                function cambiarBanner() {
+                    var ima = document.querySelector(".banner");
+
+                    switch (banner.iterador) {
+                        case 0:
+                            ima.style.backgroundImage = "url(" + banner[0] + ")";
+                            banner.iterador++;
+                            break;
+
+                        case 1:
+                            ima.style.backgroundImage = "url(" + banner[1] + ")";
+                            banner.iterador++;
+                            break;
+
+                        case 2:
+                            ima.style.backgroundImage = "url(" + banner[2] + ")";
+                            banner.iterador++;
+                            break;
+                        case 3:
+                            ima.style.backgroundImage = "url(" + banner[3] + ")";
+                            banner.iterador++;
+                            break;
+
+                        case 4:
+                            ima.style.backgroundImage = "url(" + banner[4] + ")";
+                            banner.iterador++;
+                            break;
+
+                        case 5:
+                            ima.style.backgroundImage = "url(" + banner[5] + ")";
+                            banner.iterador++;
+                            break;
+                        case 6:
+                            ima.style.backgroundImage = "url(" + banner[6] + ")";
+                            banner.iterador++;
+                            break;
+
+                        case 7:
+                            ima.style.backgroundImage = "url(" + banner[7] + ")";
+                            banner.iterador++;
+                            break;
+
+                        case 8:
+                            ima.style.backgroundImage = "url(" + banner[8] + ")";
+                            banner.iterador++;
+                            break;
+                        case 9:
+                            ima.style.backgroundImage = "url(" + banner[9] + ")";
+                            banner.iterador++;
+                            break;
+                    }
+
+                    if (banner.iterador > 9) {
+                        banner.iterador = 0;
+                    }
+                }
+    </script>
+
+    <script>
+        /* Valor del rango desde*/
+
+        var sliderDesde = document.getElementById("desde");
+
+        var outputDesde = document.getElementById("desdeValor");
+        outputDesde.innerHTML = sliderDesde.value;
+
+        sliderDesde.oninput = function () {
+            a = this.value;
+            outputDesde.innerHTML = a;
+        }
+
+
+        /* Valor del rango hasta*/
+        var sliderHasta = document.getElementById("hasta");
+        var outputHasta = document.getElementById("hastaValor");
+        outputHasta.innerHTML = sliderHasta.value;
+
+        sliderHasta.oninput = function () {
+            a = this.value;
+            outputHasta.innerHTML = a;
+        }
+
+        var boton = document.querySelector(".buscar");
+        var borrar = document.querySelector(".borrar");
+        console.log(boton);
+        boton.addEventListener("click", function (e) {
+            e.preventDefault;
+            location.href = "/?min=" + sliderDesde.value + "&max=" + sliderHasta.value;
+        });
+
+        borrar.addEventListener("click", function (e) {
+            e.preventDefault;
+            location.href = "/";
+        });
+    </script>
 </body>
 
 </html>
